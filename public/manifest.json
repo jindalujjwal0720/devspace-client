@@ -1,6 +1,7 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Devspace",
+  "name": "Devspace",
+  "description": "Devspace is a platform for developers to share their projects and ideas with the world.",
   "icons": [
     {
       "src": "favicon.ico",
