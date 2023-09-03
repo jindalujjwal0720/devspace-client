@@ -1,0 +1,47 @@
+.toast {
+  position: fixed;
+  top: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999;
+  width: 100%;
+  max-width: min(calc(100% - 2rem), 500px);
+  padding: 0.5rem 1rem;
+  background-color: #dc3545;
+  color: #fff;
+  font-size: 1rem;
+  line-height: 1.4;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  animation: slideIn 0.5s, slideOut 0.5s 3s;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-150%) translateX(-50%);
+  }
+  to {
+    transform: translateY(0) translateX(-50%);
+  }
+}
+
+@keyframes slideOut {
+  from {
+    transform: translateY(0) translateX(-50%);
+  }
+  to {
+    transform: translateY(-200%) translateX(-50%);
+  }
+}
+
+.icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.message {
+  width: 100%;
+  margin: 0;
+}

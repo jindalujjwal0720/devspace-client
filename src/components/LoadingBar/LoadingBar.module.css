@@ -1,0 +1,28 @@
+.loading {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 2px;
+  transform: translateX(-25%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1;
+}
+
+.loading .bar {
+  width: 30%;
+  height: 100%;
+  background-color: var(--color-primary-500);
+  animation: loading 1s infinite linear;
+}
+
+@keyframes loading {
+  0% {
+    transform: translateX(-200%);
+  }
+  100% {
+    transform: translateX(30%);
+  }
+}

@@ -1,0 +1,7 @@
+:root {
+  --color-primary-500: hsl(214, 82%, 51%);
+  --color-primary-600: hsl(214, 82%, 41%);
+  --color-grey-400: hsl(210, 9%, 51%);
+  --color-grey-500: hsl(210, 9%, 41%);
+  --color-border: hsl(210, 9%, 91%);
+}

@@ -6,16 +6,15 @@
  * Proprietary and confidential. All rights reserved.
  */
 
-// import logo from './logo.svg';
-import "./App.css";
-import AppRoutes from "./routes/AppRoutes";
+import React from "react";
+import { Routes, Route } from "react-router-dom";
 
-function App() {
+const ServiceProviderRoutes = () => {
   return (
-    <div className="App">
-      <AppRoutes />
-    </div>
+    <Routes>
+      <Route path="/" element={<div>Devspace - Service Provider App</div>} />
+    </Routes>
   );
-}
+};
 
-export default App;
+export default ServiceProviderRoutes;

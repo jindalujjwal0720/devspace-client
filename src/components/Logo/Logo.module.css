@@ -1,0 +1,53 @@
+a.logo_container {
+  text-decoration: none;
+}
+
+a.logo_container:hover {
+  text-decoration: none;
+}
+
+a.logo_container:active {
+  text-decoration: none;
+}
+
+a.logo_container:focus {
+  text-decoration: none;
+}
+
+a.logo_container:visited {
+  text-decoration: none;
+}
+
+.logo {
+  position: relative;
+  display: flex;
+  align-items: center;
+  font-size: 1.5em;
+  font-weight: 500;
+  font-family: sans-serif;
+  cursor: pointer;
+  color: black;
+  margin: 8px 0;
+}
+
+.logo span {
+  position: relative;
+}
+
+.logo span::after {
+  position: absolute;
+  content: "";
+  width: 95%;
+  height: 0.15rem;
+  background-color: var(--color-primary-500);
+  bottom: 0;
+  left: 0;
+  margin-left: 0.06em;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease-in-out;
+}
+
+.logo:hover span::after {
+  transform: scaleX(1);
+}
